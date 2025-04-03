@@ -14,12 +14,23 @@ class Site:
 		self.state: str = state
 
 
+class infoGetter:
+    def __init__(self):
+        pass
+    def retrieve():
+        address = input("Please enter an address: \n");
+        unit_type = input("Please specify type of home (eg single, multi)\n")
+        builder = input("Please specify the builder\n")
+        return address
+    
 
 if __name__ == "__main__":
 
-	connection = sqlite3.connect("../database/data.db")
+    test = infoGetter.retrieve()
+    print(test)
+	# connection = sqlite3.connect("../database/data.db")
 
-	
+    	
 
 	# a1 = Site("198 Saddlemead Green NE", "Not dug")
 	# a1.state = "Dug"
